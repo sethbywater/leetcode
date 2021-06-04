@@ -14,5 +14,6 @@ pub mod p503_next_greater_element_ii;
 pub mod p867_transpose_matrix;
 pub mod p986_binary_tree_cameras;
 pub mod p1431_kids_with_candies;
+pub mod p1472_design_browser_history;
 pub mod p1553_min_days_to_eat_oranges;
 pub mod p1626_best_team_w_no_conflict;
