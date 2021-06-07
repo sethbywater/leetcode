@@ -10,6 +10,7 @@ pub mod p208_implement_trie;
 pub mod p213_house_robber_ii;
 pub mod p337_house_robber_iii;
 pub mod p407_trapping_rain_water_ii;
+pub mod p458_poor_pigs;
 pub mod p496_next_greater_element;
 pub mod p503_next_greater_element_ii;
 pub mod p867_transpose_matrix;
