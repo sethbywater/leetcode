@@ -15,6 +15,7 @@ pub mod p496_next_greater_element;
 pub mod p503_next_greater_element_ii;
 pub mod p867_transpose_matrix;
 pub mod p922_sort_by_parity_ii;
+pub mod p985_sum_of_even_nums_after_queries;
 pub mod p986_binary_tree_cameras;
 pub mod p1431_kids_with_candies;
 pub mod p1472_design_browser_history;
