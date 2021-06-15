@@ -7,6 +7,7 @@ pub mod p121_max_profit;
 pub mod p198_house_robber;
 pub mod p213_house_robber_ii;
 pub mod p337_house_robber_iii;
+pub mod p376_wiggle_subsequence;
 pub mod p407_trapping_rain_water_ii;
 pub mod p458_poor_pigs;
 pub mod p496_next_greater_element;
@@ -21,3 +22,5 @@ pub mod p1431_kids_with_candies;
 pub mod p1472_design_browser_history;
 pub mod p1553_min_days_to_eat_oranges;
 pub mod p1626_best_team_w_no_conflict;
+// pub mod p1653_minimum_deletions; WIP
+// pub mod p1774_closest_dessert_cost; WIP
