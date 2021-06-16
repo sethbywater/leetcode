@@ -3,8 +3,10 @@ pub mod p2_add_two_numbers;
 pub mod p12_int_to_roman;
 pub mod p42_trapping_rain_water;
 pub mod p53_max_subarray;
+pub mod p62_unique_paths;
 pub mod p121_max_profit;
 pub mod p198_house_robber;
+// pub mod p208_implement_trie; WIP
 pub mod p213_house_robber_ii;
 pub mod p337_house_robber_iii;
 pub mod p376_wiggle_subsequence;
