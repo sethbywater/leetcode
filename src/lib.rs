@@ -1,11 +1,14 @@
 pub mod collections;
 pub mod p2_add_two_numbers;
 pub mod p12_int_to_roman;
+pub mod p28_implement_str_str;
 pub mod p42_trapping_rain_water;
 pub mod p53_max_subarray;
 pub mod p62_unique_paths;
+// pub mod p63_unique_paths_ii; WIP
 pub mod p121_max_profit;
 pub mod p198_house_robber;
+// pub mod p199_binary_tree_right_side_view; WIP
 // pub mod p208_implement_trie; WIP
 pub mod p213_house_robber_ii;
 pub mod p337_house_robber_iii;
