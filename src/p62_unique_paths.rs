@@ -29,17 +29,17 @@ pub fn unique_paths(m: i32, n: i32) -> i32 {
 }
 
 #[test]
-fn example1() {
+fn example_1() {
 	assert_eq!(unique_paths(3, 7), 28)
 }
 
 #[test]
-fn example2() {
+fn example_2() {
 	assert_eq!(unique_paths(3, 2), 3)
 }
 
 #[test]
-fn example3() {
+fn example_3() {
 	assert_eq!(unique_paths(7, 3), 28)
 }
 
