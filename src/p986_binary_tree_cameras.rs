@@ -5,7 +5,7 @@
 //! required to monitor all nodes
 
 use std::{cell::RefCell, rc::Rc};
-use crate::collections::TreeNode;
+use crate::collections::{PreorderIter, TreeNode, root_from_slice};
 
 pub fn min_camera_cover(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
 	// Start from one above the root, in case it needs a camera itself
@@ -35,4 +35,20 @@ enum Cam {
 	IsCamera,
 	NeedCamera,
 	NotReq
+}
+
+#[test]
+fn example_1() {
+	let root = root_from_slice(&[
+		Some(0), Some(0), Some(0), None, None, Some(0), None, None, None
+	]);
+	assert_eq!(min_camera_cover(root), 1);
+}
+
+#[test]
+fn example_2() {
+	let root = root_from_slice(&[
+		Some(0), Some(0), Some(0), Some(0), None, Some(0), None, None, None, None, None
+	]);
+	assert_eq!(min_camera_cover(root), 2);
 }
