@@ -125,25 +125,3 @@ fn test_tree_from_slice() {
 	
 	assert_eq!(vec![20, 8, 4, 12, 10, 14],	vec)
 }
-
-
-	// // Find the start of the right node
-				// let mut r = l.clone(); // This value is never used, but must be initialized
-				// let mut nones = 2;
-				// let n = src.len();
-				// for i in l..=n {
-				// 	if i == n { panic!("Tree is not terminated") }
-				// 	if nones == 0 {
-				// 		r = i;
-				// 		break
-				// 	}
-				// 	match src[i] {
-				// 		None => nones -= 1,
-				// 		Some(_) => nones += 1
-				// 	}
-				// }
-				// Some(Rc::new(RefCell::new(TreeNode {
-				// 	val,
-				// 	left: recurse(src, l),
-				// 	right: recurse(src, r)
-				// })))
