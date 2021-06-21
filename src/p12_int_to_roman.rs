@@ -14,3 +14,28 @@ pub fn int_to_roman(num: i32) -> String {
 	}
 	s
 }
+
+#[test]
+fn example_1() {
+	assert_eq!(int_to_roman(3), "III".to_string())
+}
+
+#[test]
+fn example_2() {
+	assert_eq!(int_to_roman(4), "IV".to_string())
+}
+
+#[test]
+fn example_3() {
+	assert_eq!(int_to_roman(9), "IX".to_string())
+}
+
+#[test]
+fn example_4() {
+	assert_eq!(int_to_roman(58), "LVIII".to_string())
+}
+
+#[test]
+fn example_5() {
+	assert_eq!(int_to_roman(1994), "MCMXCIV".to_string())
+}
