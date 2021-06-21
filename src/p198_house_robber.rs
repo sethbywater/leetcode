@@ -27,3 +27,19 @@ pub fn rob(mut nums: Vec<i32>) -> i32 {
 	}
 	nums.into_iter().max().unwrap()
 }
+
+#[test]
+fn example_1() {
+	assert_eq!(
+		rob(vec![1, 2, 3, 1]),
+		4
+	)
+}
+
+#[test]
+fn example_2() {
+	assert_eq!(
+		rob(vec![2, 7, 9, 3, 1]),
+		12
+	)
+}
