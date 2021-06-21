@@ -13,26 +13,43 @@
 
 use std::cmp;
 
-/// Top-level call which uses the same algorithm from House Robber I,
-/// but tests it for the array excluding the first element, and then
+/// Uses the same algorithm from House Robber I, but tests 
+/// it for the array excluding the first element, and then
 /// excluding the last element and takes the max of the two
 pub fn rob_ii(nums: Vec<i32>) -> i32 {
 	if nums.len() < 4 { return nums.into_iter().max().unwrap() }
-	let n = nums.len();
+
+    fn helper(mut nums: Vec<i32>, st: usize, en: usize) -> i32 {
+        let mut max = 0;
+        nums[en-2] = nums[en-2].max(nums[en-1]);
+        for i in (st..en-2).rev() {
+            nums[i] = cmp::max(
+                nums[i+2] + nums[i],
+                nums[i+1]
+            );
+            max = max.max(nums[i])
+        }
+        max
+    }
+
+    let n = nums.len();
 	cmp::max(
-		rob_ii_helper(nums.clone(), 0, n - 1),
-		rob_ii_helper(nums.clone(), 1, n)
+		helper(nums.clone(), 0, n - 1),
+		helper(nums.clone(), 1, n)
 	)
 }
 
-/// House Robber II resuses code from House Robber I
-fn rob_ii_helper(mut  nums: Vec<i32>, st: usize, en: usize) -> i32 {
-    nums[en-2] = nums[en-2].max(nums[en-1]);
-    for i in (st..en-2).rev() {
-        nums[i] = cmp::max(
-            nums[i+2] + nums[i],
-            nums[i+1]
-        )
-    }
-    nums.into_iter().max().unwrap()
+#[test]
+fn example_1() {
+    assert_eq!(rob_ii(vec![2, 3, 2]), 3)
+}
+
+#[test]
+fn example_2() {
+    assert_eq!(rob_ii(vec![1, 2, 3, 1]), 4)
+}
+
+#[test]
+fn example_3() {
+    assert_eq!(rob_ii(vec![0]), 0)
 }
