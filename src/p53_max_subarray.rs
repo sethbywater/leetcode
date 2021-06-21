@@ -13,3 +13,27 @@ pub fn max_subarrary(nums: Vec<i32>) -> i32 {
 	}
 	max_so_far
 }
+
+#[test]
+fn example_1() {
+	assert_eq!(
+		max_subarrary(vec![-2, 1, -3, 4, -1, 2, 1, -5, 4]),
+		6
+	)
+}
+
+#[test]
+fn example_2() {
+	assert_eq!(
+		max_subarrary(vec![1]),
+		1
+	)
+}
+
+#[test]
+fn example_3() {
+	assert_eq!(
+		max_subarrary(vec![5, 4, -1, 7, 8]),
+		23
+	)
+}

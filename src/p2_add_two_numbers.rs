@@ -3,6 +3,7 @@
 //! one digit and digits stored in reverse order, multiply the two numbers and
 //!return the product as a linked list
 
+#[allow(unused_imports)] // Imported for testing but still throws a warning
 use crate::collections::{ListNode, list_root_to_vec};
 
 /// Top-level function to call the helper function
