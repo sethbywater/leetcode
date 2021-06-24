@@ -17,3 +17,27 @@ pub fn kids_with_candies(candies: Vec<i32>, extra_candies: i32) -> Vec<bool> {
 	}
 	can_have_most_candy
 }
+
+#[test]
+fn example_1() {
+    assert_eq!(
+        kids_with_candies(vec![2, 3, 5, 1, 3], 3),
+        vec![true, true, true, false, true]
+    )
+}
+
+#[test]
+fn example_2() {
+    assert_eq!(
+        kids_with_candies(vec![4, 2, 1, 1, 2], 1),
+        vec![true, false, false, false, false]
+    )
+}
+
+#[test]
+fn example_3() {
+    assert_eq!(
+        kids_with_candies(vec![12, 1, 12], 10),
+        vec![true, false, true]
+    )
+}
