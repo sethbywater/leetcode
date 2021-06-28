@@ -18,6 +18,7 @@ pub mod p458_poor_pigs;
 pub mod p496_next_greater_element;
 pub mod p503_next_greater_element_ii;
 pub mod p551_student_attendance_record_i;
+pub mod p764_largest_plus_sign;
 pub mod p845_longest_mountain;
 pub mod p867_transpose_matrix;
 pub mod p922_sort_by_parity_ii;
