@@ -6,26 +6,10 @@ pub fn order_of_largest_plus_sign(n: i32, mines: Vec<Vec<i32>>) -> i32 {
     }
   
     let mut max = 0;
-    // Check if the edges are valid plus signs
-    for i in 0..n {
-        if grid[0][i] == 1 || grid[n-1][i] == 1 {
-            max = 1;
-            break
-        }
-    }
-    if max == 0 {
-        for i in 1..n-1 {
-            if grid[i][0] == 0 || grid[i][n-1] == 0 {
-                max = 1;
-                break;
-            }
-        }
-    }
 
-    for i in 1..n-1 {
-        for j in 1..n-1 {
-            if grid[i][j] == 0 { continue }
-            let mut k: usize = 1;
+    for i in 0..n {
+        for j in 0..n {
+            let mut k: usize = grid[i][j] as usize;
             while k <= i            // Make sure we don't fall off the grid
                 && k + i < n
                 && k <= j
@@ -56,8 +40,8 @@ fn example_2() {
 }
 
 #[test]
-// First test case I failed.
-fn center_zero() {
+// First test case I failed, because I did not check edges
+fn edges() {
     assert_eq!(
         order_of_largest_plus_sign(3, vec![
             vec![0, 1],
