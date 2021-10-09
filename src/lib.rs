@@ -18,6 +18,7 @@ pub mod p458_poor_pigs;
 pub mod p496_next_greater_element;
 pub mod p503_next_greater_element_ii;
 pub mod p551_student_attendance_record_i;
+pub mod p718_max_repeated_subarray;
 pub mod p764_largest_plus_sign;
 pub mod p845_longest_mountain;
 pub mod p867_transpose_matrix;
@@ -25,6 +26,7 @@ pub mod p922_sort_by_parity_ii;
 pub mod p985_sum_of_even_nums_after_queries;
 pub mod p986_binary_tree_cameras;
 // pub mod p1187_make_array_strictly_increasing; WIP
+// pub mod p1352_product_last_k_nums; WIP
 // pub mod p1354_construct_target_array_multiple_sums; WIP
 pub mod p1431_kids_with_candies;
 pub mod p1472_design_browser_history;
